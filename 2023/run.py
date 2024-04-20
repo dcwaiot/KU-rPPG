@@ -38,39 +38,38 @@ if __name__ == "__main__":
         if frame is None:
             print("End of video")
             cv2.destroyAllWindows()
-            # timer.stop()
             break
 
         rects, shape, time_s = fu.no_age_gender_face_process(frame, start_time)
-
+         
         if rects is None:
             cv2.putText(frame, "No face detected", (30, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
             cv2.imshow("frame", frame)
-
-
             if cv2.waitKey(1) & 0xFF == ord('q'):
                 cv2.destroyAllWindows()
-
                 break
             continue
 
         (x, y, w, h) = face_utils.rect_to_bb(rects[0])
-
+        
+        # creat bounding_box
         cv2.rectangle(bb_box, (x, y), (x + w, y + h), (255, 0, 0), 2)
         cv2.putText(bb_box, "Frame: {0:.2f}".format(i), (30, int(frame.shape[0] * 0.2)), cv2.FONT_HERSHEY_SIMPLEX, 1,
                     (255, 0, 0), 2)
 
         img = frame
         bbbox = img.copy()
-        Roi1 = img[shape[70][1]:shape[23][1], shape[70][0]:shape[23][0]]
-        cv2.rectangle(bbbox, (shape[70][0], shape[70][1]), (shape[23][0], shape[23][1]), (0, 255, 0), 2)
-        ROI2 = img[shape[29][1]:shape[33][1], shape[54][0]:shape[12][0]]
-        cv2.rectangle(bbbox, (shape[54][0], shape[29][1]), (shape[12][0], shape[33][1]), (0, 255, 0), 2)  # right cheeks
-        ROI3 = img[shape[29][1]:shape[33][1], shape[4][0]:shape[48][0]]
-        cv2.rectangle(bbbox, (shape[4][0], shape[29][1]), (shape[48][0], shape[33][1]), (0, 255, 0), 2)  # left
-        cv2.putText(bbbox, "frame: {0:.2f}".format(i), (30, int(frame.shape[0] * 0.95) - 30), cv2.FONT_HERSHEY_SIMPLEX,
+        cv2.putText(bbbox, "frame: {}".format(i), (30, int(frame.shape[0] * 0.95) - 30), cv2.FONT_HERSHEY_SIMPLEX,
                     1, (255, 0, 0), 2)
-
+        #Find_ROI
+        Roi1 = img[shape[70][1]:shape[23][1], shape[70][0]:shape[23][0]]
+        #cv2.rectangle(bbbox, (shape[70][0], shape[70][1]), (shape[23][0], shape[23][1]), (0, 255, 0), 2)
+        ROI2 = img[shape[29][1]:shape[33][1], shape[54][0]:shape[12][0]]
+        #cv2.rectangle(bbbox, (shape[54][0], shape[29][1]), (shape[12][0], shape[33][1]), (0, 255, 0), 2)  # right cheeks
+        ROI3 = img[shape[29][1]:shape[33][1], shape[4][0]:shape[48][0]]
+        #cv2.rectangle(bbbox, (shape[4][0], shape[29][1]), (shape[48][0], shape[33][1]), (0, 255, 0), 2)  # left
+    
+        #Find_pixel_AVG_of_ROI
         avg1 = np.mean(Roi1[:, :, 1])
         avg2 = np.mean(ROI2[:, :, 1])
         avg3 = np.mean(ROI3[:, :, 1])
@@ -79,6 +78,7 @@ if __name__ == "__main__":
 
         if rects is not None:
             times.append(time_s)
+            
         buffer_data.append(Raw_rppg)
 
         L = len(buffer_data)
