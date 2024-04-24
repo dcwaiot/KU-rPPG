@@ -8,31 +8,21 @@
 * [Flowchart](#technologies-used)
 * [Setup](#setup)
 * [Contact](#contact)
-<!-- * [License](#license) -->
+
 
 
 ## Introduced remote Photoplethysmography (rPPG) 
-- Remote Photoplethysmography (rPPG) เป็นเทคโนโลยีใช้สำหรับวัดค่าทางด้านร่างกายเช่น ค่าอัตราการเต้นของหัวใจ หรือค่าความดันโลหิต เป็นต้น โดยที่เทคโนโลยีนี้จะวัดค่าทางด้านร่างกายเหล่านี้แบบไร้การสัมผัสทำให้ก่อให้เกิความสะดวกสบายมากขึ้น เทคโนโลยีนี้จะใช้ภาพจากวิดิโอของบริเวณใบหน้าในการนำมาวิเคราะห์หา สัญญาณ RGB(RGB signals) ซึ่งสัญญาณ RGB สอดคล้องกับการเปลี่ยนแปลงของความสว่างของแสงที่สะท้อนจากบริเวณใบหน้า
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+- Remote Photoplethysmography (rPPG) เป็นเทคโนโลยีที่ใช้กล้องเว็บแคมในการบันทึกภาพวิดีโอบริเวณหน้าใบหน้าเพื่อทำการวิเคราะห์หาสัญญาณชีพจรเช่น อัตราการเต้นของหัวใจ หรือค่าความดันดลหิต เป็นต้น โดยที่เทคโนโลยีนี้จะพิจารณาภาพจากวีดีโอเที่กล้องเว็บแคมได้ทำการบันบัทึกภาพไว้โดยจะแสดงการเปลี่ยนแปลงเล็กน้อยของสีผิวผิที่ตรวจพบจากภาพของวิดิโอมาวัดชีพจรได้โดยไม่ต้องนำอุปกรณ์สัมผัสกับร่างกายโดยตรง
 
 
-## Technologies Used
-- Tech 1 - version 1.0
-- Tech 2 - version 2.0
-- Tech 3 - version 3.0
-
-
-## Features
-List the ready features here:
-- Awesome feature 1
-- Awesome feature 2
-- Awesome feature 3
-
-
-## Screenshots
-![Example screenshot](./img/screenshot.png)
-<!-- If you have screenshots you'd like to share, include them here. -->
-
+## Theories Used
+- Remote Photoplethysmography 
+- Face Detection
+- Signal processing
+    -Detrending
+    -Interpolation
+    -Normalization
+    -Band-pass filtering
 
 ## Setup
 What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
