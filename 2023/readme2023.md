@@ -4,7 +4,7 @@
 
 ## Contents
 * [Introduced remote Photoplethysmography (rPPG)](#introduced-remote-photoplethysmography-rppg)
-* [Theories Used](#theories-used)
+* [Theories Used](#tecnologies-used)
 * [Flowchart](#flowchart)
 * [Setup](#setup)
 * [Contact](#contact)
@@ -15,7 +15,7 @@
 - Remote Photoplethysmography (rPPG) เป็นเทคโนโลยีที่ใช้กล้องเว็บแคมในการบันทึกภาพวิดีโอบริเวณหน้าใบหน้าเพื่อทำการวิเคราะห์หาสัญญาณชีพจรเช่น อัตราการเต้นของหัวใจ หรือค่าความดันดลหิต เป็นต้น โดยที่เทคโนโลยีนี้จะพิจารณาภาพจากวีดีโอเที่กล้องเว็บแคมได้ทำการบันบัทึกภาพไว้โดยจะแสดงการเปลี่ยนแปลงเล็กน้อยของสีผิวผิที่ตรวจพบจากภาพของวิดิโอมาวัดชีพจรได้โดยไม่ต้องนำอุปกรณ์สัมผัสกับร่างกายโดยตรง
 
 
-## Theories Used
+## Tecnologise Used
 - Remote Photoplethysmography 
 - Face Detection
     - Dlib Algorithm 
