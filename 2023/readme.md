@@ -18,6 +18,7 @@
 ## Theories Used
 - Remote Photoplethysmography 
 - Face Detection
+    - Dlib algorithm 
 - Signal processing
     - Detrending
     - Interpolation
