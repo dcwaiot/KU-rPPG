@@ -4,7 +4,7 @@
 
 ## Contents
 * [Introduced remote Photoplethysmography (rPPG)](#introduced-remote-photoplethysmography-rppg)
-* [Theories Used](#tecnologies-used)
+* [Tecnologise Used](#tecnologies-used)
 * [Flowchart](#flowchart)
 * [Setup](#setup)
 * [Contact](#contact)
