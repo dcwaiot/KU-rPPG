@@ -1,4 +1,4 @@
-# rPPG(2023)
+# Real-time heart rate prediction using facial images from webcam capturing (2023)
 > โครงงานนี้มีวัตถุประสงค์เพื่อทำการศึกษาการวัดค่าอัตราการเต้นของหัวใจจากวิโอใบหน้าแบบไม่สัมผัสโดยใช้เทคนิคที่เรียกว่า remote Photoplethysmography (rPPG)  โดยที่เทคนิคนี้กล้องเว็บแคมจะทำการการบันทึกภาพวิดีโอบริเวณหน้าใบหน้าโดยใช้ Dlib มาช่วยในการประมวลผลหาบริเวณที่เป็นใบหน้า เพื่อนำข้อมูลภาพที่เป็นผลลัพธ์จากการประมวลผลใช้ไปวิเคราะห์หาอัตราการเต้นของหัวใจต่อไป
 > [_link_here(https://youtu.be/VAt0u9G9iS0)_] 
 
@@ -18,7 +18,7 @@
 ## Theories Used
 - Remote Photoplethysmography 
 - Face Detection
-    - Dlib algorithm 
+    - Dlib Algorithm 
 - Signal processing
     - Detrending
     - Interpolation
