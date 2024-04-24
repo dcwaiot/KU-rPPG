@@ -19,10 +19,10 @@
 - Remote Photoplethysmography 
 - Face Detection
 - Signal processing
-    _Detrending
-    _Interpolation
-    _Normalization
-    _Band-pass filtering
+    - Detrending
+    - Interpolation
+    - Normalization
+    - Band-pass filtering
 
 ## Setup
 What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
