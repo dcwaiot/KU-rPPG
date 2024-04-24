@@ -18,7 +18,7 @@ if __name__ == "__main__":
         cap = cv2.VideoCapture(option)
 
     #intial_module
-    fu = Face_utilities()
+    fu = Face_Detection()
     sp = Signal_processing()
 
     i = 0
