@@ -26,12 +26,8 @@ class Face_Detection():
     def get_landmarks(self, frame, t0):
         if self.predictor is None:
             self.predictor = dlib.shape_predictor(self.path)
-            print("Load_model-->!SUCCESS!")
-
-        if frame is None:
-            return None
-
-        # face must be gray
+            print("Load_model------------->!SUCCESS!")
+            
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         rects = self.face_detection(frame)
 
