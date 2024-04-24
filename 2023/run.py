@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 from imutils import face_utils
-from face_detection import Face_utilities
+from face_detection import Face_Detection
 from signalprocessing import Signal_processing
 import time
 
@@ -9,7 +9,7 @@ import time
 
 if __name__ == "__main__":
 
-    option=int(input('VIDEO(press'1')_OR_REALTIME(press'0'): '))
+    option=int(input('VIDEO(press1)\\_OR_\\REALTIME(press0): '))
     BUFFER_SIZE = int(input('USE_BUFFER_SIZE: '))
     if option == 1:
         path=str(input('PATH: '))
