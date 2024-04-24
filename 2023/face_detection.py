@@ -18,9 +18,6 @@ class Face_Detection():
         if self.detector is None:
             self.detector = dlib.get_frontal_face_detector()
 
-        if frame is None:
-            return
-
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         rects = self.detector(gray, 0)
 
