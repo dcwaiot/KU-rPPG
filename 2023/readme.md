@@ -2,25 +2,17 @@
 > โครงงานนี้มีวัตถุประสงค์เพื่อทำการศึกษาการวัดค่าอัตราการเต้นของหัวใจจากวิโอใบหน้าแบบไม่สัมผัสโดยใช้เทคนิคที่เรียกว่า remote Photoplethysmography (rPPG)  โดยที่เทคนิคนี้กล้องเว็บแคมจะทำการการบันทึกภาพวิดีโอบริเวณหน้าใบหน้าโดยใช้ Dlib มาช่วยในการประมวลผลหาบริเวณที่เป็นใบหน้า เพื่อนำข้อมูลภาพที่เป็นผลลัพธ์จากการประมวลผลใช้ไปวิเคราะห์หาอัตราการเต้นของหัวใจต่อไป
 > [_link_here(https://youtu.be/VAt0u9G9iS0)_] 
 
-## Table of Contents
-* [General Info](#general-information)
-* [Technologies Used](#technologies-used)
-* [Features](#features)
-* [Screenshots](#screenshots)
+## Contents
+* [Introduced remote Photoplethysmography (rPPG) ](#general-information)
+* [Theories Used](#technologies-used)
+* [Flowchart](#technologies-used)
 * [Setup](#setup)
-* [Usage](#usage)
-* [Project Status](#project-status)
-* [Room for Improvement](#room-for-improvement)
-* [Acknowledgements](#acknowledgements)
 * [Contact](#contact)
 <!-- * [License](#license) -->
 
 
-## General Information
-- Provide general information about your project here.
-- What problem does it (intend to) solve?
-- What is the purpose of your project?
-- Why did you undertake it?
+## Introduced remote Photoplethysmography (rPPG) 
+- Remote Photoplethysmography (rPPG) เป็นเทคโนโลยีใช้สำหรับวัดค่าทางด้านร่างกายเช่น ค่าอัตราการเต้นของหัวใจ หรือค่าความดันโลหิต เป็นต้น โดยที่เทคโนโลยีนี้จะวัดค่าทางด้านร่างกายเหล่านี้แบบไร้การสัมผัสทำให้ก่อให้เกิความสะดวกสบายมากขึ้น เทคโนโลยีนี้จะใช้ภาพจากวิดิโอของบริเวณใบหน้าในการนำมาวิเคราะห์หา สัญญาณ RGB(RGB signals) ซึ่งสัญญาณ RGB สอดคล้องกับการเปลี่ยนแปลงของความสว่างของแสงที่สะท้อนจากบริเวณใบหน้า
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 
