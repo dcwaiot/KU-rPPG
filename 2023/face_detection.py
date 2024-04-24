@@ -4,7 +4,7 @@ from imutils import *
 import time
 
 
-class Face_utilities():
+class Face_Detection():
 
     def __init__(self, face_width=200):
         self.detector = None
