@@ -23,6 +23,8 @@
     - Interpolation
     - Normalization
     - Band-pass filtering
+ 
+## Flowchart
 
 ## Setup
 What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
