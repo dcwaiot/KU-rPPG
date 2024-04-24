@@ -9,8 +9,8 @@ import time
 
 if __name__ == "__main__":
 
-    option=int(input('VIDEO(1)_OR_REALTIME(0): '))
-    BUFFER_SIZE = int(input('BUFFER_SIZE: '))
+    option=int(input('VIDEO(press'1')_OR_REALTIME(press'0'): '))
+    BUFFER_SIZE = int(input('USE_BUFFER_SIZE: '))
     if option == 1:
         path=str(input('PATH: '))
         cap = cv2.VideoCapture(path)
@@ -65,9 +65,9 @@ if __name__ == "__main__":
         Roi1 = img[shape[70][1]:shape[23][1], shape[70][0]:shape[23][0]]
         #cv2.rectangle(bbbox, (shape[70][0], shape[70][1]), (shape[23][0], shape[23][1]), (0, 255, 0), 2)
         ROI2 = img[shape[29][1]:shape[33][1], shape[54][0]:shape[12][0]]
-        #cv2.rectangle(bbbox, (shape[54][0], shape[29][1]), (shape[12][0], shape[33][1]), (0, 255, 0), 2)  # right cheeks
+        #cv2.rectangle(bbbox, (shape[54][0], shape[29][1]), (shape[12][0], shape[33][1]), (0, 255, 0), 2)
         ROI3 = img[shape[29][1]:shape[33][1], shape[4][0]:shape[48][0]]
-        #cv2.rectangle(bbbox, (shape[4][0], shape[29][1]), (shape[48][0], shape[33][1]), (0, 255, 0), 2)  # left
+        #cv2.rectangle(bbbox, (shape[4][0], shape[29][1]), (shape[48][0], shape[33][1]), (0, 255, 0), 2)  
     
         #Find_pixel_AVG_of_ROI
         avg1 = np.mean(Roi1[:, :, 1])
