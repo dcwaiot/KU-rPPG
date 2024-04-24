@@ -3,7 +3,7 @@
 > [_link_here(https://youtu.be/VAt0u9G9iS0)_] 
 
 ## Contents
-* [Introduced remote Photoplethysmography (rPPG) ](#general-information)
+* [Introduced remote Photoplethysmography (rPPG)](#general-information)
 * [Theories Used](#technologies-used)
 * [Flowchart](#technologies-used)
 * [Setup](#setup)
