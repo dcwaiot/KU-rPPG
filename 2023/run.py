@@ -76,9 +76,8 @@ if __name__ == "__main__":
         avg = [avg1, avg2, avg3]
         Raw_rppg = np.mean(avg)
 
-        if rects is not None:
-            times.append(time_s)
-            
+        
+        times.append(time_s)    
         buffer_data.append(Raw_rppg)
 
         L = len(buffer_data)
