@@ -30,7 +30,11 @@
 
 
 ## Setup
-1.เตรียม module 
+1.implementation project
+```
+pip install -r requirements.txt
+```
+2.Preparing module
 ```
 pip install -r requirements.txt
 ```
