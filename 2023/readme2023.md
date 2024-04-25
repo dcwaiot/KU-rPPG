@@ -18,12 +18,14 @@
 ## Tecnologise Used
 - Remote Photoplethysmography 
 - Face Detection
-    - Dlib Algorithm 
+    - Dlib Algorithm
+       - ` dlib.get_frontal_face_detector() `
+       - ` dlib.shape_predictor() `
 - Signal processing
-    - Detrending
-    - Interpolation
-    - Normalization
-    - Band-pass filtering
+    - Detrending  ` `
+    - Interpolation  ` `
+    - Normalization  ` `
+    - Band-pass filtering ` `
  
 ## Flowchart
 ![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://github.com/stpsittiporn/KU-rPPG/blob/stp/2023/img/Picture3.png)
@@ -39,8 +41,9 @@ git clone https://github.com/stpsittiporn/KU-rPPG.git
 pip install -r requirements.txt
 ```
 ### 3.run file
-- face_detection.py
-- signalprocessing.py
+- 1.face_detection.py
+- 2.signalprocessing.py
+- 3.run.py
 
 ## Contact
 Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
