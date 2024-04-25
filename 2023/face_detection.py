@@ -10,15 +10,18 @@ class Face_Detection():
         self.detector = None
         self.predictor = None
     def face_detection(self, frame):
-        self.detector = dlib.get_frontal_face_detector()
+        if self.detector==None:
+            self.detector = dlib.get_frontal_face_detector()
+            print("Load_model_get_frontal_face_detector------------->!SUCCESS!")
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         rects = self.detector(gray, 0)
 
         return rects
 
     def get_landmarks(self, frame, t0):
-        self.predictor = dlib.shape_predictor("shape_predictor_81_face_landmarks.dat")
-        print("Load_model------------->!SUCCESS!")
+        if self.predictor == None:
+            self.predictor = dlib.shape_predictor("shape_predictor_81_face_landmarks.dat")
+            print("Load_model_shape_predictor_81------------->!SUCCESS!")
             
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         rects = self.face_detection(frame)
@@ -41,7 +44,6 @@ class Face_Detection():
             (x, y, w, h) = face_utils.rect_to_bb(rects[0])
             # face = frame[y:y+h,x:x+w]
         return rects, shape, time_face
-
 
 
 
