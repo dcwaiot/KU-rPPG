@@ -6,25 +6,18 @@ import time
 
 class Face_Detection():
 
-    def __init__(self,path):
+    def __init__(self):
         self.detector = None
         self.predictor = None
-        self.age_net = None
-        self.gender_net = None
-        self.shape_path=path
-
     def face_detection(self, frame):
-
-        if self.detector is None:
-            self.detector = dlib.get_frontal_face_detector()
-
+        self.detector = dlib.get_frontal_face_detector()
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         rects = self.detector(gray, 0)
 
         return rects
 
     def get_landmarks(self, frame, t0):
-        self.predictor = dlib.shape_predictor(self.shape_path)
+        self.predictor = dlib.shape_predictor("shape_predictor_81_face_landmarks.dat")
         print("Load_model------------->!SUCCESS!")
             
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
