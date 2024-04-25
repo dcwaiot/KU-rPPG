@@ -28,7 +28,7 @@
     - Band-pass filtering ` `
  
 ## Flowchart
-<img src="https://github.com/stpsittiporn/KU-rPPG/blob/stp/2023/img/Picture3.png" width="600" />
+<img src="https://github.com/stpsittiporn/KU-rPPG/blob/stp/2023/img/Picture3.png" width="500" />
 
 
 ## Setup
