@@ -1,6 +1,6 @@
 import cv2
 import dlib
-from imutils import *
+from imutils import face_utils
 import time
 
 
