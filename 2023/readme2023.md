@@ -40,7 +40,7 @@ git clone https://github.com/stpsittiporn/KU-rPPG.git
 ```
 pip install -r requirements.txt
 ```
-### 3.run file
+### 3.Run each file accord step
 - 1.face_detection.py
 - 2.signalprocessing.py
 - 3.run.py
@@ -49,8 +49,3 @@ pip install -r requirements.txt
 Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
 
 
-<!-- Optional -->
-<!-- ## License -->
-<!-- This project is open source and available under the [... License](). -->
-
-<!-- You don't have to include all sections - just the one's relevant to your project -->
