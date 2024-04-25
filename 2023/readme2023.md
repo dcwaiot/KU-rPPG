@@ -19,8 +19,8 @@
 - Remote Photoplethysmography 
 - Face Detection
     - Dlib Algorithm
-       - ` dlib.get_frontal_face_detector() `
-       - ` dlib.shape_predictor() `
+       - ` dlib.get_frontal_face_detector() ` find frontal human faces in an image
+       - ` dlib.shape_predictor() ` This object is a tool that takes in an image region containing some object and outputs a set of point locations that define the pose of the object
 - Signal processing
     - Detrending  ` `
     - Interpolation  ` `
