@@ -30,14 +30,10 @@
 
 
 ## Setup
-'''
-numpy
-scipy
-cv2
-dlib
-imutils 
-time
-'''
+1.เตรียม module 
+```
+pip install -r requirements.txt
+```
 
 ## Contact
 Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
