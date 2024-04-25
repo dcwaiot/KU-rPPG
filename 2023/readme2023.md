@@ -39,7 +39,8 @@ git clone https://github.com/stpsittiporn/KU-rPPG.git
 pip install -r requirements.txt
 ```
 ### 3.run file
-      - 
+- face_detection.py
+- signalprocessing.py
 
 ## Contact
 Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
