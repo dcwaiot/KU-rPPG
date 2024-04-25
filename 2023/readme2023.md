@@ -28,7 +28,7 @@
     - Band-pass filtering ` `
  
 ## Flowchart
-![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://github.com/stpsittiporn/KU-rPPG/blob/stp/2023/img/Picture3.png)
+<img src="https://github.com/stpsittiporn/KU-rPPG/blob/stp/2023/img/Picture3.png" width="200" />
 
 
 ## Setup
