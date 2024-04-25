@@ -27,9 +27,9 @@
     - Interpolation
       - `numpy.interp() `
     - Normalization  
-    - Band-pass filtering
+    - Band-pass filtering 
       - ` scipy.signal.butter() ` Design an Nth-order digital or analog Butterworth filter and return the filter coefficients  
-      - ` scipy.signal.lfilter() `
+      - ` scipy.signal.lfilter() ` Return the output of the digital filter
  
 ## Flowchart
 <p align="center">
