@@ -6,12 +6,12 @@ import time
 
 class Face_Detection():
 
-    def __init__(self, face_width=200):
+    def __init__(self,path):
         self.detector = None
         self.predictor = None
         self.age_net = None
         self.gender_net = None
-        self.path=str(input('shape_predictor: '))
+        self.shape_path=path
 
     def face_detection(self, frame):
 
@@ -24,9 +24,8 @@ class Face_Detection():
         return rects
 
     def get_landmarks(self, frame, t0):
-        if self.predictor is None:
-            self.predictor = dlib.shape_predictor(self.path)
-            print("Load_model------------->!SUCCESS!")
+        self.predictor = dlib.shape_predictor(self.shape_path)
+        print("Load_model------------->!SUCCESS!")
             
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         rects = self.face_detection(frame)
