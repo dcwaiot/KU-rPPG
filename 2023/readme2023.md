@@ -26,8 +26,8 @@
     - Interpolation  `numpy.interp() `
     - Normalization  
     - Band-pass filtering
-     - ` scipy.signal.butter() `
-     - ` scipy.signal.lfilter() `
+      - ` scipy.signal.butter() `
+      - ` scipy.signal.lfilter() `
  
 ## Flowchart
 <p align="center">
