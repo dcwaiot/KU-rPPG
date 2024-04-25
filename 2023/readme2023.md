@@ -30,14 +30,16 @@
 
 
 ## Setup
-### 1.implementation project
+### 1.Implementation Project
 ```
 git clone https://github.com/stpsittiporn/KU-rPPG.git
 ```
-### 2.Preparing module
+### 2.Preparing Modules from requirements.txt
 ```
 pip install -r requirements.txt
 ```
+### 3.run file
+      - 
 
 ## Contact
 Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
