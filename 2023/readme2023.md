@@ -19,8 +19,8 @@
 - Remote Photoplethysmography 
 - Face Detection
     - Dlib Algorithm
-       - ` dlib.get_frontal_face_detector() ` find frontal human faces in an image
-       - ` dlib.shape_predictor() ` This object is a tool that takes in an image region containing some object and outputs a set of point locations that define the pose of the object
+       - ` dlib.get_frontal_face_detector() ` find frontal human faces in an image and return 2 point that consist of coordinate(x,y)  to use for drawing  Bounding Box of face area
+       - ` dlib.shape_predictor() ` This object is a tool that takes in an image region containing some object and outputs a set of point locations that define the pose of the object.
 - Signal processing
     - Detrending
       - `scipy.signal.detrend() `
@@ -28,7 +28,7 @@
       - `numpy.interp() `
     - Normalization  
     - Band-pass filtering
-      - ` scipy.signal.butter() `
+      - ` scipy.signal.butter() ` Design an Nth-order digital or analog Butterworth filter and return the filter coefficients  
       - ` scipy.signal.lfilter() `
  
 ## Flowchart
