@@ -12,7 +12,7 @@
 
 
 ## Introduced remote Photoplethysmography (rPPG) 
-- Remote Photoplethysmography (rPPG) เป็นเทคโนโลยีที่ใช้กล้องเว็บแคมในการบันทึกภาพวิดีโอบริเวณหน้าใบหน้าเพื่อทำการวิเคราะห์หาสัญญาณชีพจรเช่น อัตราการเต้นของหัวใจ หรือค่าความดันดลหิต เป็นต้น โดยที่เทคโนโลยีนี้จะพิจารณาภาพจากวีดีโอเที่กล้องเว็บแคมได้ทำการบันบัทึกภาพไว้โดยจะแสดงการเปลี่ยนแปลงเล็กน้อยของสีผิวผิที่ตรวจพบจากภาพของวิดิโอมาวัดชีพจรได้โดยไม่ต้องนำอุปกรณ์สัมผัสกับร่างกายโดยตรง
+- Remote Photoplethysmography (rPPG) เป็นเทคโนโลยีที่ใช้กล้องเว็บแคมในการบันทึกภาพวิดีโอบริเวณหน้าใบหน้าเพื่อทำการวิเคราะห์หาสัญญาณชีพจรเช่น อัตราการเต้นของหัวใจ หรือค่าความดันโลหิต เป็นต้น โดยที่เทคโนโลยีนี้จะพิจารณาภาพจากวีดีโอเที่กล้องเว็บแคมได้ทำการบันบัทึกภาพไว้โดยจะแสดงการเปลี่ยนแปลงเล็กน้อยของสีผิวผิที่ตรวจพบจากภาพของวิดิโอมาวัดชีพจรได้โดยไม่ต้องนำอุปกรณ์สัมผัสกับร่างกายโดยตรง
 
 
 ## Tecnologise Used
@@ -40,10 +40,16 @@ git clone https://github.com/stpsittiporn/KU-rPPG.git
 ```
 pip install -r requirements.txt
 ```
-### 3.Run each file accord step
-- 1.face_detection.py
-- 2.signalprocessing.py
-- 3.run.py
+### 3.Run each file in terminal according to step
+```
+python face_detection.py
+```
+```
+python signalprocessing.py
+```
+```
+python run.py
+```
 
 ## Contact
 Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
